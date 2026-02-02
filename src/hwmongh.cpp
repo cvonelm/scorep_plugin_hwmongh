@@ -74,7 +74,7 @@ public:
                     data_[sensor.first].emplace_back(scorep::chrono::measurement_clock::now(), val/1000000);
                 }
             }
-            std::this_thread::sleep_for(std::chrono::microseconds(25));
+            std::this_thread::sleep_for(std::chrono::milliseconds(20));
         }
     }
 
